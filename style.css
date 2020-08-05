@@ -7,7 +7,7 @@ body {
 }
 
 .card {
-    width: max-content;
+    width: auto;
     height: 380px;
     display: inline-block;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
@@ -75,8 +75,9 @@ body {
     background-color: black;
 }
 
+
 .image {
-    opacity: 0.5;
+    opacity: 0.4;
     width: 639px;
 }
 
@@ -87,12 +88,14 @@ body {
     text-decoration: line-through;
 }
 
+
 #college-name {
     display: inline-block;
     margin-left: 15px;
 }
 
 #nearest_place {
+    position: relative;
     transform: translateY(-25px);
     margin-left: 15px;
 }
@@ -107,7 +110,7 @@ body {
     transform: translateY(-50px);
     float: left;
     padding-left: 15px;
-    background-color: powderblue;
+    background-color: rgb(202, 235, 255);
     width: max-content;
     border-left: 5px;
     padding-top: 5px;
@@ -117,15 +120,39 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-#amenties1 {
+#price {
+    transform: translateY(-150px);
     display: inline-block;
     float: right;
-    transform: translateY(-46px);
     margin-right: 20px;
+}
+
+#amenities {
+    transform: translateY(-105px);
+    display: inline-block;
+    margin-left: 200px;
+}
+
+#amenties1 {
+    display: inline-block;
+    transform: translateX(230px);
+    color: rgba(10, 155, 245, 0.918);
 }
 
 #amenties2 {
     display: inline-block;
+    transform: translateX(230px);
+    color: rgba(10, 155, 245, 0.918);
+}
+
+#discounted-fees {
+    color: red;
+    font-weight: 700;
+    font-size: 40px;
     float: right;
-    transform: translateY(-46px);
+}
+
+#semester {
+    transform: translateY(-40px);
+    font-size: 10px;
 }
