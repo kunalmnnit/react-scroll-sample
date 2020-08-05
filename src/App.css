@@ -5,7 +5,7 @@ body {
 .card {
   width: max-content;
   height: 380px;
-  margin-left: 10%;
+  margin-left: 5%;
   position: relative;
   margin-top: 5%;
   display: inline-block;
