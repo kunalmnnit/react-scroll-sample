@@ -53,7 +53,7 @@ function App() {
               {college.rating_remarks}
             </span>
           </div>
-          <div className="ranking-badge">{college.ranking}</div>
+          <div className="ranking-badge">#{college.ranking}</div>
           <div className="tags-row">{college.tags[0]}</div>
           <div className="tags-row" style={{ marginLeft: "175px" }}>
             {college.tags[1]}
@@ -83,10 +83,10 @@ function App() {
               </span>
             </div>
             <div id="price-discount" style={{ float: "right" }}>
-              <p className="discount">{college.original_fees}</p>
+              <p className="discount">₹{college.original_fees}</p>
               <div className="discount-label red">
                 {" "}
-                <span>{college.discount}</span>
+                <span>₹{college.discount}</span>
               </div>
             </div>
             <div id="address">
