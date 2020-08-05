@@ -1,10 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
 #row {
     padding: 20px;
 }
 
 .card {
     width: max-content;
-    height: max-content;
+    height: 380px;
     display: inline-block;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -76,7 +80,7 @@
     width: 639px;
 }
 
-.discounted-price {
+.discount {
     display: inline-block;
     float: left;
     margin-right: 25px;
@@ -88,7 +92,40 @@
     margin-left: 15px;
 }
 
-#address {
-    transform: translateY(-20px);
+#nearest_place {
+    transform: translateY(-25px);
     margin-left: 15px;
+}
+
+#famous_nearest_places {
+    transform: translateY(-30px);
+    margin-left: 15px;
+}
+
+#offertext {
+    display: inline-block;
+    transform: translateY(-50px);
+    float: left;
+    padding-left: 15px;
+    background-color: powderblue;
+    width: max-content;
+    border-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#amenties1 {
+    display: inline-block;
+    float: right;
+    transform: translateY(-46px);
+    margin-right: 20px;
+}
+
+#amenties2 {
+    display: inline-block;
+    float: right;
+    transform: translateY(-46px);
 }
