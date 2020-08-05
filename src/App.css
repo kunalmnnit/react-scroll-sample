@@ -38,8 +38,8 @@ body {
   top: 0;
   width: 75px;
   right: 10px;
-  display: flex;
-  flex-direction: column;
+  display: flexbox;
+  align-items: center;
   transform: translateY(80%);
   z-index: 10;
 }
@@ -55,6 +55,80 @@ body {
   flex-direction: row;
   transform: translateY(475%);
   z-index: 10;
+}
+
+.discount-label {
+  padding: 8px;
+  position: relative;
+  float: left;
+  width: 8px;
+  height: 1px;
+  margin-top: 18px;
+  margin-right: 15px;
+  -webkit-border-radius: 0 2px 0 4px;
+  -moz-border-radius: 0 2px 0 2px;
+  border-radius: 0 2px 2px 0;
+}
+
+.discount-label:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 8.5px;
+  margin-top: -8px;
+}
+
+.discount-label:before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  top: 42%;
+  left: 5%;
+  right: 100%;
+  width: 3.5px;
+  height: 3.5px;
+  opacity: 0.95;
+  background: #ffffff;
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0.5px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0.5px 0 rgba(0, 0, 0, 0.6);
+}
+discount-label span {
+  position: absolute;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Raleway", Helvetica;
+  top: 20%;
+}
+
+.red {
+  background-color: #e80707;
+}
+
+.red:after {
+  border-right-color: #e80707;
+}
+
+.upper {
+  background-color: black;
+}
+
+.image {
+  opacity: 0.4;
+  width: 639px;
+}
+
+.discount {
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  text-decoration: line-through;
 }
 
 .ranking-badge {
@@ -162,7 +236,7 @@ body {
   transform: translateY(-50px);
   float: left;
   padding-left: 15px;
-  background-color: powderblue;
+  background-color: rgb(202, 235, 255);
   width: max-content;
   border-left: 5px;
   padding-top: 5px;
@@ -172,23 +246,73 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-#amenties1 {
+#price {
+  transform: translateY(-150px);
   display: inline-block;
   float: right;
-  color: rgb(115, 198, 209);
-  font-weight: bold;
-  transform: translateY(-46px) translateX(10px);
   margin-right: 20px;
+}
+
+#amenities {
+  transform: translateY(-105px);
+  display: inline-block;
+  margin-left: 200px;
+}
+
+#amenties1 {
+  display: inline-block;
+  transform: translateX(230px);
+  color: rgba(10, 155, 245, 0.918);
 }
 
 #amenties2 {
   display: inline-block;
+  transform: translateX(230px);
+  color: rgba(10, 155, 245, 0.918);
+}
+
+#discounted-fees {
+  color: red;
+  font-weight: 700;
+  font-size: 40px;
   float: right;
-  font-weight: bold;
-  color: rgb(115, 198, 209);
-  transform: translateY(-46px);
+}
+
+#semester {
+  transform: translateY(-40px);
+  font-size: 10px;
 }
 .checked-star {
   color: "blue";
   font-weight: bold;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: relative;
+  left: 50%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
